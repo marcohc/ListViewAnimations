@@ -15,6 +15,8 @@
  */
 package com.nhaarman.listviewanimations.appearance;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
@@ -26,8 +28,6 @@ import android.widget.BaseAdapter;
 import com.nhaarman.listviewanimations.BaseAdapterDecorator;
 import com.nhaarman.listviewanimations.util.AnimatorUtil;
 import com.nhaarman.listviewanimations.util.ListViewWrapper;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.ObjectAnimator;
 
 /**
  * A {@link BaseAdapterDecorator} class which applies multiple {@link Animator}s at once to views when they are first shown. The Animators applied include the animations specified

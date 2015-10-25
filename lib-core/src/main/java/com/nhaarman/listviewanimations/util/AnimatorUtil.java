@@ -16,9 +16,8 @@
 
 package com.nhaarman.listviewanimations.util;
 
+import android.animation.Animator;
 import android.support.annotation.NonNull;
-
-import com.nineoldandroids.animation.Animator;
 
 public class AnimatorUtil {
 

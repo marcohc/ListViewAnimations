@@ -16,6 +16,11 @@
 
 package com.nhaarman.listviewanimations.itemmanipulation.animateaddition;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Pair;
@@ -29,12 +34,6 @@ import android.widget.ListView;
 import com.nhaarman.listviewanimations.BaseAdapterDecorator;
 import com.nhaarman.listviewanimations.util.AbsListViewWrapper;
 import com.nhaarman.listviewanimations.util.Insertable;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.animation.ObjectAnimator;
-import com.nineoldandroids.animation.ValueAnimator;
-import com.nineoldandroids.view.ViewHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -307,7 +306,7 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
             AnimatorSet animatorSet = new AnimatorSet();
             animatorSet.playTogether(animators);
 
-            ViewHelper.setAlpha(view, 0);
+            view.setAlpha(0);
             ObjectAnimator alphaAnimator = ObjectAnimator.ofFloat(view, ALPHA, 0, 1);
 
             AnimatorSet allAnimatorsSet = new AnimatorSet();

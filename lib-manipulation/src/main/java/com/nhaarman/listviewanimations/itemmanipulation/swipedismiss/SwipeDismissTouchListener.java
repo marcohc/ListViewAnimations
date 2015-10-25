@@ -15,6 +15,8 @@
  */
 package com.nhaarman.listviewanimations.itemmanipulation.swipedismiss;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.view.View;
@@ -22,9 +24,7 @@ import android.view.ViewGroup;
 
 import com.nhaarman.listviewanimations.util.AdapterViewUtil;
 import com.nhaarman.listviewanimations.util.ListViewWrapper;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.nineoldandroids.animation.ValueAnimator;
+import android.animation.ValueAnimator;
 
 import java.util.Collection;
 import java.util.Collections;

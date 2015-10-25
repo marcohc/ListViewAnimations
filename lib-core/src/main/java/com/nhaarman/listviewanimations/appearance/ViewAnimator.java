@@ -16,6 +16,8 @@
 
 package com.nhaarman.listviewanimations.appearance;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
 import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,9 +30,7 @@ import android.view.View;
 import android.widget.GridView;
 
 import com.nhaarman.listviewanimations.util.ListViewWrapper;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.view.ViewHelper;
+
 
 /**
  * A class which decides whether given Views should be animated based on their position: each View should only be animated once.
@@ -244,7 +244,7 @@ public class ViewAnimator {
             mAnimationStartMillis = SystemClock.uptimeMillis();
         }
 
-        ViewHelper.setAlpha(view, 0);
+        view.setAlpha(0);
 
         AnimatorSet set = new AnimatorSet();
         set.playTogether(animators);

@@ -15,14 +15,14 @@
  */
 package com.nhaarman.listviewanimations.appearance.simple;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.nhaarman.listviewanimations.appearance.SingleAnimationAdapter;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.ObjectAnimator;
 
 /**
  * An implementation of the AnimationAdapter class which applies a

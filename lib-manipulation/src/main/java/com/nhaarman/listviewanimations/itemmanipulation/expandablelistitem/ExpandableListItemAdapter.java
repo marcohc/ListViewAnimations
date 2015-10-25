@@ -15,6 +15,9 @@
  */
 package com.nhaarman.listviewanimations.itemmanipulation.expandablelistitem;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -29,9 +32,6 @@ import com.nhaarman.listviewanimations.ArrayAdapter;
 import com.nhaarman.listviewanimations.util.AdapterViewUtil;
 import com.nhaarman.listviewanimations.util.ListViewWrapper;
 import com.nhaarman.listviewanimations.util.ListViewWrapperSetter;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.Collection;

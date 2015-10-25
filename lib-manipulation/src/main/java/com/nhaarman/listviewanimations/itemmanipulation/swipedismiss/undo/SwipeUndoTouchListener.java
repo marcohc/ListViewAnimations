@@ -15,6 +15,10 @@
  */
 package com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.undo;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,10 +26,6 @@ import android.view.ViewGroup;
 import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissTouchListener;
 import com.nhaarman.listviewanimations.util.AdapterViewUtil;
 import com.nhaarman.listviewanimations.util.ListViewWrapper;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.animation.ObjectAnimator;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -219,7 +219,7 @@ public class SwipeUndoTouchListener extends SwipeDismissTouchListener {
     }
 
     /**
-     * An {@link com.nineoldandroids.animation.Animator.AnimatorListener} which finalizes the undo when the animation is finished.
+     * An {@link Animator.AnimatorListener} which finalizes the undo when the animation is finished.
      */
     private class UndoAnimatorListener extends AnimatorListenerAdapter {
 
